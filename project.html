@@ -29,6 +29,13 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/sal.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -46,18 +53,18 @@
             <nav class="navbar" id="fixedNavbar">
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Services </a>
+                  <a class="nav-link" href="index.html"> Services </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about"> Blogs</a>
+                  <a class="nav-link" href="index.html"> Blogs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonials"> About us </a>
+                  <a class="nav-link" href="index.html"> About us </a>
                 </li>
               </ul>
             </nav>
             <div class="header-btn">
-              <a href="#" class="main-btn">
+              <a href="index.html" class="main-btn">
                 <span> Contact us </span>
               </a>
               <button class="menu-btn">
@@ -114,9 +121,11 @@
           </div>
           <div class="mix category-a" data-order="1">
             <div class="gallery-cont">
-              <a class="gallery" href="#">
+
+              <a class="gallery" data-fancybox="gallery" href="images/portfolio/01.png">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #1"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/01.png"
@@ -124,9 +133,10 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="gallery" href="images/portfolio/02.jpg">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #2"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/02.jpg"
@@ -134,9 +144,11 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="gallery" href="images/portfolio/03.jpg">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #3"
+
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/03.jpg"
@@ -144,9 +156,10 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="gallery" href="images/portfolio/04.jpg">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #4"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/04.jpg"
@@ -158,9 +171,10 @@
           </div>
           <div class="mix category-b" data-order="2">
             <div class="gallery-cont">
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="vids" href="images/portfolio/05.jpg">
                 <figure class="gallery-figure">
                   <img
+                    data-caption="Caption #5"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/05.jpg"
@@ -168,9 +182,10 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="vids" href="images/portfolio/06.webp">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #6"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/06.webp"
@@ -178,9 +193,10 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="vids" href="images/portfolio/07.png">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #7"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/07.png"
@@ -188,9 +204,10 @@
                   />
                 </figure>
               </a>
-              <a class="gallery" href="#">
+              <a class="gallery" data-fancybox="vids" href="images/portfolio/08.jpg">
                 <figure class="gallery-figure">
                   <img
+                  data-caption="Caption #8"
                     class="gallery-img"
                     alt="image1"
                     src="images/portfolio/08.jpg"
@@ -222,13 +239,13 @@
                 <h2 class="nav-foot-header nav-accordion">Company</h2>
                 <ul class="nav-foot nav-wrap list-unstyled">
                   <li class="nav-foot-li">
-                    <a href="#" class="nav-foot-link">Home</a>
+                    <a href="index.html" class="nav-foot-link">Home</a>
                   </li>
                   <li class="nav-foot-li">
-                    <a href="#" class="nav-foot-link">Portfolio </a>
+                    <a href="index.html" class="nav-foot-link">Portfolio </a>
                   </li>
                   <li class="nav-foot-li">
-                    <a href="#" class="nav-foot-link">Contact us</a>
+                    <a href="index.html" class="nav-foot-link">Contact us</a>
                   </li>
                 </ul>
               </div>
@@ -281,8 +298,8 @@
     <!-- End footer -->
 
     <!--fixed-whats-->
-    <a href="#" class="fixed-what">
-      <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/+201013633154?text=Good%20Morning%20Isnaad" class="fixed-what" >
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!--fixed-whats-->
     <!-- arrow to top -->
@@ -297,6 +314,10 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/sal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>

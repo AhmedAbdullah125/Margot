@@ -890,6 +890,15 @@ html[dir=ltr] .progress-bar {
      object-fit: cover;
 }
 
+.offer-img:hover::after {
+  animation: bottom 1s linear 0s infinite alternate;
+}
+
+.offer-img:hover::before {
+  transform: translate(35px, 30px);
+  animation: top 1s linear 0s infinite alternate;
+}
+
 .company-numbers {
   padding: 50px 0;
   background-color: #ffa966;
@@ -1203,6 +1212,37 @@ html[dir=ltr] .progress-bar {
      object-fit: cover;
 }
 
+.about-img:hover::after {
+  animation: bottom 1s linear 0s infinite alternate;
+}
+
+.about-img:hover::before {
+  transform: translate(35px, 30px);
+  animation: top 1s linear 0s infinite alternate;
+}
+
+@keyframes top {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(35px, 30px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-35px, -30px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 .about-content {
   text-align: start;
   display: flex;
@@ -1642,6 +1682,10 @@ footer {
 }
 .nav-foot-link:hover {
   color: #a4b1bd;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .social {
