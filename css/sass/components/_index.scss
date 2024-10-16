@@ -70,7 +70,7 @@
 //partners
 .partners-section {
   width: 100%;
-  background-color: #ffa966;
+  background-color: #1f3a55;
   overflow: hidden;
   padding: 24px 0;
 }
@@ -117,8 +117,12 @@
 }
 .offer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 38px;
+  @include max-1200 {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
   @include max-991 {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -190,6 +194,15 @@
   
   animation: bottom 1s linear 0s infinite alternate;
 }
+.brand-name{
+  color: $hover;
+  font-family: 'Cabin';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.88px;
+  text-align: left;
+
+}
 .offer-img:hover::before {
   transform: translate(35px , 30px);
   animation: top 1s linear 0s infinite alternate;
@@ -197,7 +210,7 @@
 //company-numbers
 .company-numbers {
   padding: 50px 0;
-  background-color: #ffa966;
+  background-color: #1f3a55;
   overflow: hidden;
   .section-head {
     color: $white;
@@ -407,15 +420,16 @@
   gap: 100px;
   padding-bottom: 40px;
   border-bottom: 2px solid #ffd4b2;
+  padding-top: 40px;
   @include max-991 {
     flex-direction: column;
     justify-content: center;
     gap: 40px;
   }
 }
-.about-item:nth-of-type(2n) {
-  border: none;
-  padding-top: 40px;
+.about-item:nth-child(even)  {
+  // border: none;
+  
   flex-direction: row-reverse;
   @include max-991 {
     flex-direction: column;

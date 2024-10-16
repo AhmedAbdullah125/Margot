@@ -3,7 +3,8 @@
   max-width: 133px;
   height: 44px;
   border-radius: 8px;
-  display: inline-flex;
+  display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -114,6 +115,8 @@
   max-width: 137px;
   max-height: 39px;
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 8px;
 }
 .logo img {
   height: 100%;

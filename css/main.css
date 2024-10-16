@@ -379,7 +379,8 @@ html[dir=ltr] .progress-bar {
   max-width: 133px;
   height: 44px;
   border-radius: 8px;
-  display: inline-flex;
+  display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -475,6 +476,8 @@ html[dir=ltr] .progress-bar {
   max-width: 137px;
   max-height: 39px;
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo img {
@@ -758,7 +761,7 @@ html[dir=ltr] .progress-bar {
 
 .partners-section {
   width: 100%;
-  background-color: #ffa966;
+  background-color: #1f3a55;
   overflow: hidden;
   padding: 24px 0;
 }
@@ -814,8 +817,14 @@ html[dir=ltr] .progress-bar {
 
 .offer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 38px;
+}
+@media only screen and (max-width: 1199px) {
+  .offer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .offer-container {
@@ -894,6 +903,15 @@ html[dir=ltr] .progress-bar {
   animation: bottom 1s linear 0s infinite alternate;
 }
 
+.brand-name {
+  color: var(--main-hover);
+  font-family: "Cabin";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.88px;
+  text-align: left;
+}
+
 .offer-img:hover::before {
   transform: translate(35px, 30px);
   animation: top 1s linear 0s infinite alternate;
@@ -901,7 +919,7 @@ html[dir=ltr] .progress-bar {
 
 .company-numbers {
   padding: 50px 0;
-  background-color: #ffa966;
+  background-color: #1f3a55;
   overflow: hidden;
 }
 .company-numbers .section-head {
@@ -1138,6 +1156,7 @@ html[dir=ltr] .progress-bar {
   gap: 100px;
   padding-bottom: 40px;
   border-bottom: 2px solid #ffd4b2;
+  padding-top: 40px;
 }
 @media only screen and (max-width: 991px) {
   .about-item {
@@ -1147,13 +1166,11 @@ html[dir=ltr] .progress-bar {
   }
 }
 
-.about-item:nth-of-type(2n) {
-  border: none;
-  padding-top: 40px;
+.about-item:nth-child(even) {
   flex-direction: row-reverse;
 }
 @media only screen and (max-width: 991px) {
-  .about-item:nth-of-type(2n) {
+  .about-item:nth-child(even) {
     flex-direction: column;
   }
 }
@@ -1693,6 +1710,7 @@ html {
   align-items: center;
   justify-content: flex-start;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .social a {
