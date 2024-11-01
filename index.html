@@ -46,7 +46,7 @@
                 <a class="nav-link" href="#AboutUs"> About us </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">  Contact us </a>
+                <a class="nav-link" href="#contact"> Contact us </a>
               </li>
             </ul>
           </nav>
@@ -219,175 +219,250 @@
       </h5>
       <div class="gallery-container" id="mix-container">
         <div class="mix-btn-cont">
-          <button class="mix-btn" type="button" data-filter="all">All</button>
-          <button class="mix-btn" type="button" data-filter=".category-a">
+          <button class="mix-btn" type="button" onclick="showAll()">All</button>
+          <button class="mix-btn" type="button"  onclick="show1()">
             Event planning
           </button>
-          <button class="mix-btn" type="button" data-filter=".category-b">
+          <button class="mix-btn" type="button" onclick="show2()">
             Social media marketing
           </button>
-          <button class="mix-btn" type="button" data-filter=".category-c">
+          <button class="mix-btn" type="button" onclick="show3()">
             Advertising
           </button>
         </div>
-        <div class="mix category-a" data-order="1">
-          <div class="gallery-cont">
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/01.png">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #1" class="gallery-img" alt="image1" src="images/portfolio/01.png"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  et massa mi. Aliquam in hendrerit urna.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/02.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #2" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/03.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #3" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/04.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #4" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/05.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #5" class="gallery-img" alt="image1" src="images/portfolio/05.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="photos" href="images/portfolio/06.webp">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #4" class="gallery-img" alt="image1" src="images/portfolio/06.webp"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-          </div>
+        <div class="">
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/01.png"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #1" class="gallery-img" alt="image1" src="images/portfolio/01.png"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                et massa mi. Aliquam in hendrerit urna.
+              </p>
+            </div>
+          </a>
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/02.jpg"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #2" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/03.jpg"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #3" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/04.jpg"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #4" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/05.jpg"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #5" class="gallery-img" alt="image1" src="images/portfolio/05.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery gallery1 mix category-a" data-fancybox="photos" href="images/portfolio/06.webp"
+            data-order="1">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #4" class="gallery-img" alt="image1" src="images/portfolio/06.webp"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/07.png" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #7" class="gallery-img" alt="image1" src="images/portfolio/07.png"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                et massa mi. Aliquam in hendrerit urna.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/08.jpg" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #8" class="gallery-img" alt="image1" src="images/portfolio/08.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/01.png" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #9" class="gallery-img" alt="image1" src="images/portfolio/01.png"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/02.jpg" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #10" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/03.jpg" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #11" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-b gallery1" data-fancybox="vids" href="images/portfolio/04.jpg" data-order="2">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #12" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/07.png" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #7" class="gallery-img" alt="image1" src="images/portfolio/07.png"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                et massa mi. Aliquam in hendrerit urna.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/08.jpg" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #8" class="gallery-img" alt="image1" src="images/portfolio/08.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/02.jpg" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #10" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/01.png" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #9" class="gallery-img" alt="image1" src="images/portfolio/01.png"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/03.jpg" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #11" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
+          <a class="gallery mix category-c gallery1" data-fancybox="vids" href="images/portfolio/04.jpg" data-order="3">
+            <figure class="gallery-figure">
+              <img data-caption="Caption #12" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
+                class="img-fluid" />
+            </figure>
+            <div class="text-gallery">
+              <h5 class="portfolio-name">Company 1</h5>
+              <p class="portfolio-pargh">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </a>
         </div>
-        <div class="mix category-b" data-order="2">
-          <div class="gallery-cont">
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/07.png">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #7" class="gallery-img" alt="image1" src="images/portfolio/07.png"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  et massa mi. Aliquam in hendrerit urna.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/08.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #8" class="gallery-img" alt="image1" src="images/portfolio/08.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/01.png">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #9" class="gallery-img" alt="image1" src="images/portfolio/01.png"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/02.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #10" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/03.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #11" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/04.jpg">
-              <figure class="gallery-figure">
-                <img data-caption="Caption #12" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
-                  class="img-fluid" />
-              </figure>
-              <div class="text-gallery">
-                <h5 class="portfolio-name">Company 1</h5>
-                <p class="portfolio-pargh">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="mixcategory-c" data-order="3"></div>
       </div>
-      <a href="project.html" class="more-ancor">
-        See more<i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+
+    </div>
+    <a href="project.html" class="more-ancor">
+      See more<i class="fa-solid fa-chevron-down"></i></a>
     </div>
   </section>
   <!-- End Portfolio  -->

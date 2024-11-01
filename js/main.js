@@ -1,9 +1,33 @@
 $(window).on("load", function () {
   $("body").removeClass("overflow");
 });
+function show1() {
+  console.log("sssssss")
+  $('.category-b').addClass('opacity0 visibility0');
+  $('.category-c').addClass('opacity0 visibility0');
+  $('.category-a').removeClass('opacity0 visibility0');
+}
+function show2() {
+  console.log("sssssss")
+  $('.category-c').addClass('opacity0 visibility0');
+  $('.category-a').addClass('opacity0 visibility0');
+  $('.category-b').removeClass('opacity0 visibility0');
+}
+function show3() {
+  console.log("sssssss")
+  $('.category-a').addClass('opacity0 visibility0');
+  $('.category-b').addClass('opacity0 visibility0');
+  $('.category-c').removeClass('opacity0 visibility0');
+}
+function showAll() {
+  console.log("sssssss")
+  $('.category-a').removeClass('opacity0 visibility0');
+  $('.category-b').removeClass('opacity0 visibility0');
+  $('.category-c').removeClass('opacity0 visibility0');
+}
 $(document).ready(function () {
-   // Add smooth scrolling to all links
-   $("a").on('click', function(event) {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -17,7 +41,7 @@ $(document).ready(function () {
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 800, function () {
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -144,6 +168,7 @@ $(document).ready(function () {
   // for counter //
   const sectionExists =
     document.getElementsByClassName("counter-cont").length > 0;
+
 
   if (sectionExists) {
     var a = 0;

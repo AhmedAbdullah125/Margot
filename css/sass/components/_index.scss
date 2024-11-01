@@ -319,9 +319,29 @@
 }
 .gallery {
   position: relative;
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    /* width: 100%; */
+    overflow: hidden;
+    display: inline-block;
+    width: 31.33%;
+    padding: 10px;
+    @include max-991 {
+      width: 48%;
+    }
+    @include max-767 {
+      width: 100%;
+    }
+}
+.opacity0{
+  opacity: 0;
+}
+.visibility0{
+  visibility: hidden;
+  height: 0px;
+  padding: 0;
+  // transform: rotateX(90deg);
+  // margin-top: -50px;
+  display: none;
 }
 .gallery-figure {
   position: relative;
