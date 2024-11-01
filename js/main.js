@@ -3,27 +3,27 @@ $(window).on("load", function () {
 });
 function show1() {
   console.log("sssssss")
-  $('.category-b').addClass('opacity0 visibility0');
-  $('.category-c').addClass('opacity0 visibility0');
-  $('.category-a').removeClass('opacity0 visibility0');
+  $('.category-b').fadeOut(500)
+  $('.category-c').fadeOut(500);
+  $('.category-a').fadeIn(500);
 }
 function show2() {
   console.log("sssssss")
-  $('.category-c').addClass('opacity0 visibility0');
-  $('.category-a').addClass('opacity0 visibility0');
-  $('.category-b').removeClass('opacity0 visibility0');
+  $('.category-c').fadeOut(500);
+  $('.category-a').fadeOut(500);
+  $('.category-b').fadeIn(500);
 }
 function show3() {
   console.log("sssssss")
-  $('.category-a').addClass('opacity0 visibility0');
-  $('.category-b').addClass('opacity0 visibility0');
-  $('.category-c').removeClass('opacity0 visibility0');
+  $('.category-a').fadeOut(500);
+  $('.category-b').fadeOut(500);
+  $('.category-c').fadeIn(500);
 }
 function showAll() {
   console.log("sssssss")
-  $('.category-a').removeClass('opacity0 visibility0');
-  $('.category-b').removeClass('opacity0 visibility0');
-  $('.category-c').removeClass('opacity0 visibility0');
+  $('.category-a').fadeIn(500);
+  $('.category-b').fadeIn(500);
+  $('.category-c').fadeIn(500);
 }
 $(document).ready(function () {
   // Add smooth scrolling to all links
