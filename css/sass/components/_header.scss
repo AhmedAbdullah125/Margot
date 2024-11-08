@@ -25,6 +25,17 @@
     height: 45px;
     font-size: 14px;
   }
+  @include max-500 {
+    min-width: unset;
+    max-width: unset;
+    width: unset;
+    padding: 10px;
+    font-size: 14px;
+    height: unset;
+    span{
+      display: none;
+    }
+  }
 }
 .main-btn:hover {
   color: $white;
@@ -38,7 +49,7 @@
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #fff;
+  background-color: transparent;
 }
 // .header-section::after {
 //   content: "";
@@ -61,6 +72,11 @@
 // }
 .header-section.fixed {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: $white;
+  .nav-link {
+    color: $sec;
+  }
+  
 }
 
 .header {
@@ -224,7 +240,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  color: $sec;
+  color: $white;
   font-family: "poppins";
   font-weight: 600;
   font-size: 16px;

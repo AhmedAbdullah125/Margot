@@ -93,10 +93,6 @@ html {
   scroll-behavior: unset !important;
 }
 
-body {
-  padding-top: 93.99px;
-}
-
 @media only screen and (max-width: 991px) {
   body {
     padding-top: 85px;
@@ -403,6 +399,19 @@ html[dir=ltr] .progress-bar {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .main-btn {
+    min-width: unset;
+    max-width: unset;
+    width: unset;
+    padding: 10px;
+    font-size: 14px;
+    height: unset;
+  }
+  .main-btn span {
+    display: none;
+  }
+}
 
 .main-btn:hover {
   color: var(--white-color);
@@ -415,11 +424,15 @@ html[dir=ltr] .progress-bar {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .header-section.fixed {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: var(--white-color);
+}
+.header-section.fixed .nav-link {
+  color: var(--sec-color);
 }
 
 .header {
@@ -590,7 +603,7 @@ html[dir=ltr] .progress-bar {
   justify-content: center;
   align-items: center;
   position: relative;
-  color: var(--sec-color);
+  color: var(--white-color);
   font-family: "poppins";
   font-weight: 600;
   font-size: 16px;
@@ -910,6 +923,11 @@ html[dir=ltr] .progress-bar {
   font-weight: 600;
   line-height: 38.88px;
   text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .brand-name {
+    font-size: 28px;
+  }
 }
 
 .offer-img:hover::before {

@@ -201,6 +201,10 @@
   font-weight: 600;
   line-height: 38.88px;
   text-align: left;
+  @include max-400 {
+    font-size: 24px;
+
+  }
 
 }
 .offer-img:hover::before {

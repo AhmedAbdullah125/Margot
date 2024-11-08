@@ -99,71 +99,65 @@
       <h2 class="section-head">Explore event gallery</h2>
       <div class="gallery-container" id="mix-container">
         <div class="mix-btn-cont">
-          <button class="mix-btn" type="button" data-filter="all">All</button>
-          <button class="mix-btn" type="button" data-filter=".category-a">
+          <button class="mix-btn" type="button" onclick="showAll()">All</button>
+          <button class="mix-btn" type="button"  onclick="show1()">
             Photos
           </button>
-          <button class="mix-btn" type="button" data-filter=".category-b">
+          <button class="mix-btn" type="button" onclick="show2()">
             Videos
           </button>
         </div>
-        <div class="mix category-a" data-order="1">
-          <div class="gallery-cont">
+       
 
-            <a class="gallery" data-fancybox="gallery" href="images/portfolio/01.png">
+            <a  data-fancybox="gallery" href="images/portfolio/01.png" class="category-a gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #1" class="gallery-img" alt="image1" src="images/portfolio/01.png"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="gallery" href="images/portfolio/02.jpg">
+            <a  data-fancybox="gallery" href="images/portfolio/02.jpg" class="category-a gallery" >
               <figure class="gallery-figure">
                 <img data-caption="Caption #2" class="gallery-img" alt="image1" src="images/portfolio/02.jpg"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="gallery" href="images/portfolio/03.jpg">
+            <a  data-fancybox="gallery" href="images/portfolio/03.jpg" class="category-a gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #3" class="gallery-img" alt="image1" src="images/portfolio/03.jpg"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="gallery" href="images/portfolio/04.jpg">
+            <a  data-fancybox="gallery" href="images/portfolio/04.jpg" class="category-a gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #4" class="gallery-img" alt="image1" src="images/portfolio/04.jpg"
                   class="img-fluid" />
               </figure>
             </a>
-          </div>
-        </div>
-        <div class="mix category-b" data-order="2">
-          <div class="gallery-cont">
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/05.jpg">
+            <a data-fancybox="vids" href="images/portfolio/05.jpg" class="category-b gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #5" class="gallery-img" alt="image1" src="images/portfolio/05.jpg"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/06.webp">
+            <a data-fancybox="vids" href="images/portfolio/06.webp" class="category-b gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #6" class="gallery-img" alt="image1" src="images/portfolio/06.webp"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/07.png">
+            <a data-fancybox="vids" href="images/portfolio/07.png" class="category-b gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #7" class="gallery-img" alt="image1" src="images/portfolio/07.png"
                   class="img-fluid" />
               </figure>
             </a>
-            <a class="gallery" data-fancybox="vids" href="images/portfolio/08.jpg">
+            <a data-fancybox="vids" href="images/portfolio/08.jpg" class="category-b gallery">
               <figure class="gallery-figure">
                 <img data-caption="Caption #8" class="gallery-img" alt="image1" src="images/portfolio/08.jpg"
                   class="img-fluid" />
               </figure>
             </a>
-          </div>
-        </div>
+         
       </div>
     </div>
   </section>
