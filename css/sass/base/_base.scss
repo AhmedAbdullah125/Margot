@@ -111,11 +111,11 @@ html {
 body {
   // padding-top: 93.99px;
 }
-@include max-991 {
-  body {
-    padding-top: 85px;
-  }
-}
+// @include max-991 {
+//   body {
+//     padding-top: 85px;
+//   }
+// }
 .overflow {
   overflow: hidden;
 }
