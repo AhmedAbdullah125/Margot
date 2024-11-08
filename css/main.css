@@ -434,6 +434,9 @@ html[dir=ltr] .progress-bar {
 .header-section.fixed .nav-link {
   color: var(--sec-color);
 }
+.header-section.fixed .nav-link:hover, .header-section.fixed .nav-link:focus {
+  color: var(--main-hover);
+}
 
 .header {
   display: flex;
@@ -926,7 +929,7 @@ html[dir=ltr] .progress-bar {
 }
 @media only screen and (max-width: 500px) {
   .brand-name {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
