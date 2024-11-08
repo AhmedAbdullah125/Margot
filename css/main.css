@@ -432,6 +432,9 @@ html[dir=ltr] .progress-bar {
 .header-section.fixed .nav-link:hover, .header-section.fixed .nav-link:focus {
   color: var(--main-hover);
 }
+.header-section.fixed .menu-btn .hamburger-lines .line {
+  background-color: var(--main-color);
+}
 
 .header {
   display: flex;

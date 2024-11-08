@@ -80,6 +80,9 @@
   .nav-link:hover, .nav-link:focus{
     color: $hover;
   }
+  .menu-btn .hamburger-lines .line {
+    background-color: $main;
+  }
 }
 
 .header {
